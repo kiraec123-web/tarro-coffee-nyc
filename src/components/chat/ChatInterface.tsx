@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
+import Link from "next/link";
 import { Coffee, Menu, Mic, Volume2, VolumeX } from "lucide-react";
 import { MessageBubble, TypingIndicator } from "./MessageBubble";
 import { ChatInput } from "./ChatInput";
@@ -662,14 +663,23 @@ export function ChatInterface() {
           borderBottom: "1px solid rgba(255,255,255,0.08)",
         }}
       >
-        <div className="flex items-center gap-2">
-          <Coffee className="w-5 h-5" style={{ color: "#D4943A" }} />
-          <span
-            className="font-serif-display text-xl leading-none"
-            style={{ color: "#FAF3E8" }}
+        <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
+            <Coffee className="w-5 h-5" style={{ color: "#D4943A" }} />
+            <span
+              className="font-serif-display text-xl leading-none"
+              style={{ color: "#FAF3E8" }}
+            >
+              NYC Coffee
+            </span>
+          </div>
+          <Link
+            href="/barista"
+            className="text-xs transition-opacity hover:opacity-80"
+            style={{ color: "#FAF3E8", opacity: 0.4 }}
           >
-            NYC Coffee
-          </span>
+            Barista View →
+          </Link>
         </div>
 
         <div className="flex items-center gap-2">
