@@ -15,6 +15,8 @@ export interface Order {
   status: OrderStatus;
   total_price: number;
   created_at: string;           // ISO timestamp string
+  started_at: string | null;    // set when status → in_progress
+  completed_at: string | null;  // set when status → completed
 }
 
 export interface OrderItem {
@@ -46,9 +48,11 @@ export interface OrderWithItems extends Order {
 
 // ---- Insert types (for creating new rows) ----
 
-export type NewOrder = Omit<Order, "id" | "created_at"> & {
+export type NewOrder = Omit<Order, "id" | "created_at" | "started_at" | "completed_at"> & {
   id?: string;
   created_at?: string;
+  started_at?: string | null;
+  completed_at?: string | null;
 };
 
 export type NewOrderItem = Omit<OrderItem, "id"> & {

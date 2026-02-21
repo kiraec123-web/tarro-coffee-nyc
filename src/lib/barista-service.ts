@@ -46,9 +46,13 @@ export async function updateOrderStatus(
   orderId: string,
   newStatus: OrderStatus
 ): Promise<void> {
+  const update: Record<string, unknown> = { status: newStatus };
+  if (newStatus === "in_progress") update.started_at   = new Date().toISOString();
+  if (newStatus === "completed")   update.completed_at = new Date().toISOString();
+
   const { error } = await db
     .from("orders")
-    .update({ status: newStatus })
+    .update(update)
     .eq("id", orderId);
 
   if (error) {

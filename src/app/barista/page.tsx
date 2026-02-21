@@ -640,6 +640,13 @@ export default function BaristaPage() {
           >
             ← Customer View
           </Link>
+          <Link
+            href="/owner"
+            className="text-xs transition-opacity hover:opacity-80"
+            style={{ color: "#FAF3E8", opacity: 0.45 }}
+          >
+            Owner Dashboard
+          </Link>
         </div>
 
         <span
