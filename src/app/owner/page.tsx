@@ -10,7 +10,7 @@
 // ============================================================
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
+import { NavLinks } from "@/components/NavLinks";
 import {
   DollarSign,
   ShoppingBag,
@@ -494,20 +494,7 @@ export default function OwnerDashboard() {
               NYC Coffee
             </span>
           </div>
-          <Link
-            href="/customer"
-            className="text-xs transition-opacity hover:opacity-80"
-            style={{ color: "#FAF3E8", opacity: 0.45 }}
-          >
-            ← Customer View
-          </Link>
-          <Link
-            href="/barista"
-            className="text-xs transition-opacity hover:opacity-80"
-            style={{ color: "#FAF3E8", opacity: 0.45 }}
-          >
-            Barista View
-          </Link>
+          <NavLinks />
         </div>
 
         <span

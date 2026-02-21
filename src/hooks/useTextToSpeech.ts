@@ -50,10 +50,14 @@ export function useTextToSpeech(
       try {
         setIsSpeaking(true);
 
+        // Belt-and-suspenders: append trailing periods so ElevenLabs generates
+        // a brief natural silence buffer at the end, preventing last-word cutoff.
+        const textWithBuffer = text.trim() + "..........";
+
         const response = await fetch("/api/tts", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ text }),
+          body: JSON.stringify({ text: textWithBuffer }),
           signal: controller.signal,
         });
 
@@ -84,17 +88,18 @@ export function useTextToSpeech(
         // Resolve (never reject) so a playback hiccup never crashes the app.
         await new Promise<void>((resolve) => {
           audio.onended = () => {
-            // 400 ms buffer: ElevenLabs audio can end slightly before the last
-            // syllable finishes pushing through the system audio pipeline.
-            // The delay gives the speaker time to fully play out the tail
-            // before we call onEnd (which would activate the microphone).
-            // The aborted check ensures stop() mid-delay doesn't fire onEnd.
+            // Log so we can verify the gap between onended and mic restart in console.
+            console.log(`[TTS] audio.onended at ${Date.now()}`);
+            // 1000 ms pure buffer — no cleanup, no blob revoke, no state changes,
+            // no callbacks during this window. The mic re-activation (onEnd callback)
+            // happens only AFTER this delay, after the Promise resolves, after
+            // setIsSpeaking(false). This prevents the mic from cutting the audio tail.
             setTimeout(() => {
               if (controller.signal.aborted) return;
               URL.revokeObjectURL(url);
               audioRef.current = null;
               resolve();
-            }, 400);
+            }, 1000);
           };
 
           // onerror: log and move on — the chat must keep working without audio
@@ -106,6 +111,7 @@ export function useTextToSpeech(
           };
 
           // play() can be blocked by autoplay policy — treat as a soft failure
+          console.log(`[TTS] audio.play() starting at ${Date.now()}`);
           audio.play().catch((e) => {
             console.warn("[useTextToSpeech] play() blocked — skipping:", e);
             URL.revokeObjectURL(url);

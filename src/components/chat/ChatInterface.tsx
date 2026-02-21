@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
-import Link from "next/link";
 import { Coffee, Menu, Mic, Volume2, VolumeX } from "lucide-react";
+import { NavLinks } from "@/components/NavLinks";
 import { MessageBubble, TypingIndicator } from "./MessageBubble";
 import { ChatInput } from "./ChatInput";
 import { ReceiptCard } from "./ReceiptCard";
@@ -187,6 +187,7 @@ export function ChatInterface() {
   /** Shared logic: start the mic and arm the 5-second silence guard. */
   const activateMic = useCallback(() => {
     clearAutoListenTimer();
+    console.log(`[TTS] mic restarted at ${Date.now()}`);
     startListeningRef.current();
     autoListenTimerRef.current = setTimeout(() => {
       stopListeningRef.current();
@@ -312,9 +313,6 @@ export function ChatInterface() {
 
       const apiMessages = toApiMessages(historySnapshot);
 
-      // Bug 3: track whether TTS has already been triggered during streaming
-      let ttsStarted = false;
-
       try {
         const response = await fetch("/api/chat", {
           method: "POST",
@@ -358,23 +356,6 @@ export function ChatInterface() {
             );
           }
 
-          // Bug 3: fire TTS as soon as ~100 chars have accumulated so that
-          // audio and text start at roughly the same time rather than waiting
-          // for the entire response to finish streaming first.
-          if (
-            !ttsStarted &&
-            streamingId &&
-            voiceModeRef.current &&
-            !isMutedRef.current &&
-            fullContent.length >= 100
-          ) {
-            ttsStarted = true;
-            const earlyText = stripReceiptBlock(fullContent).trim();
-            if (earlyText) {
-              // Fire-and-forget: don't await so streaming continues in parallel
-              speakMessage(streamingId, earlyText);
-            }
-          }
         }
 
         if (!streamingId) {
@@ -465,9 +446,9 @@ export function ChatInterface() {
           );
         }
 
-        // ── TTS: fire after streaming only if NOT already started early ───────
+        // ── TTS: fire after streaming with the full completed text ────────────
         const ttsText = displayContent.trim();
-        if (!ttsStarted && voiceModeRef.current && !isMutedRef.current && ttsText) {
+        if (voiceModeRef.current && !isMutedRef.current && ttsText) {
           speakMessage(streamingId, ttsText);
         }
       } catch (err) {
@@ -673,13 +654,7 @@ export function ChatInterface() {
               NYC Coffee
             </span>
           </div>
-          <Link
-            href="/barista"
-            className="text-xs transition-opacity hover:opacity-80"
-            style={{ color: "#FAF3E8", opacity: 0.4 }}
-          >
-            Barista View →
-          </Link>
+          <NavLinks subtle />
         </div>
 
         <div className="flex items-center gap-2">
