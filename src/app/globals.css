@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-amber-800: #92400e;
+  --font-sans: var(--font-dm-sans);
+
+  /* ── Brand palette ──────────────────────────────────────────────────────── */
+  --color-espresso:   #1C1210;   /* deep espresso — header, welcome bg        */
+  --color-dark-roast: #3B2418;   /* dark roast — welcome gradient end          */
+  --color-gold:       #D4943A;   /* warm gold — customer bubbles, CTA buttons  */
+  --color-cream:      #FAF3E8;   /* cream — text on dark bg, welcome heading   */
+  --color-chat-bg:    #FAF7F2;   /* warm off-white — chat area background      */
+  --color-receipt-bg: #FFFDF7;   /* paper white — receipt card background      */
+  --color-roast-text: #2C1A12;   /* dark roast — body text on light bg         */
+}
+
+/* ── Utility classes ────────────────────────────────────────────────────────── */
+
+.font-serif-display {
+  font-family: var(--font-dm-serif-display);
+}
+
+/* ── Animation keyframes ────────────────────────────────────────────────────── */
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes receipt-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@layer utilities {
+  .animate-slide-up {
+    animation: slide-up 220ms ease-out both;
+  }
+
+  .animate-receipt-in {
+    animation: receipt-in 320ms ease-out both;
+  }
+}
