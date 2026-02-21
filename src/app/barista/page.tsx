@@ -8,8 +8,8 @@
 // ============================================================
 
 import { useState, useEffect, useCallback, useRef } from "react";
-import Link from "next/link";
 import { Coffee, Clock, Flame, CheckCircle } from "lucide-react";
+import { NavLinks } from "@/components/NavLinks";
 import { supabase } from "@/lib/supabase";
 import { fetchAllOrders, updateOrderStatus } from "@/lib/barista-service";
 import { PASTRIES } from "@/lib/menu";
@@ -633,20 +633,7 @@ export default function BaristaPage() {
               NYC Coffee
             </span>
           </div>
-          <Link
-            href="/customer"
-            className="text-xs transition-opacity hover:opacity-80"
-            style={{ color: "#FAF3E8", opacity: 0.45 }}
-          >
-            ← Customer View
-          </Link>
-          <Link
-            href="/owner"
-            className="text-xs transition-opacity hover:opacity-80"
-            style={{ color: "#FAF3E8", opacity: 0.45 }}
-          >
-            Owner Dashboard
-          </Link>
+          <NavLinks />
         </div>
 
         <span
