@@ -1,0 +1,101 @@
+order_number,customer_name,status,total_price,created_at,started_at,completed_at,items
+1,David,completed,4.75,2026-02-21T13:43:00+00:00,2026-02-21T13:46:00+00:00,2026-02-21T13:48:00+00:00,Small Iced Latte (almond milk)
+2,Lauren,completed,4.75,2026-02-21T14:06:00+00:00,2026-02-21T14:09:00+00:00,2026-02-21T14:13:00+00:00,Large Iced Lemon Green Tea (+1 Caramel Syrup)
+3,James,completed,4,2026-02-21T14:17:00+00:00,2026-02-21T14:18:00+00:00,2026-02-21T14:20:00+00:00,Small Hot Lemon Green Tea (+1 Caramel Syrup)
+4,Kevin,completed,6,2026-02-21T14:28:00+00:00,2026-02-21T14:31:00+00:00,2026-02-21T14:34:00+00:00,Small Iced Americano; Banana Bread
+5,Ben,completed,4.5,2026-02-21T14:41:00+00:00,2026-02-21T14:43:00+00:00,2026-02-21T14:46:00+00:00,Small Hot Latte (oat milk)
+6,Chris,completed,9,2026-02-21T17:02:00+00:00,2026-02-21T17:03:00+00:00,2026-02-21T17:06:00+00:00,Large Iced Cold Brew; Small Iced Americano (+2 Hazelnut Syrup)
+7,Sofia,in_progress,4,2026-02-21T17:27:00+00:00,2026-02-21T17:30:00+00:00,,Small Hot Latte (whole milk)
+8,Olivia,in_progress,5,2026-02-21T17:38:00+00:00,2026-02-21T17:39:00+00:00,,Large Hot Americano (+2 Hazelnut Syrup)
+9,Tyler,new,7,2026-02-21T20:03:00+00:00,,,"Large Hot Latte (oat milk, +1 Extra Espresso Shot)"
+10,Derek,new,6.5,2026-02-21T22:54:00+00:00,,,Large Iced Coffee Frappuccino (oat milk)
+11,Tom,new,8,2026-02-21T22:55:00+00:00,,,Large Iced Americano; Chocolate Croissant
+12,Tom,new,5,2026-02-22T00:53:00+00:00,,,Small Iced Lemon Green Tea (+3 Caramel Syrup)
+13,Rachel,completed,5,2026-02-20T13:16:00+00:00,2026-02-20T13:17:00+00:00,2026-02-20T13:21:00+00:00,Large Hot Latte (whole milk)
+14,James,completed,11,2026-02-20T13:40:00+00:00,2026-02-20T13:43:00+00:00,2026-02-20T13:46:00+00:00,"Large Iced Coffee Frappuccino (whole milk); Small Hot Latte (whole milk, +2 Hazelnut Syrup)"
+15,Alex,completed,6,2026-02-20T13:50:00+00:00,2026-02-20T13:51:00+00:00,2026-02-20T13:55:00+00:00,Large Iced Cold Brew (+2 Hazelnut Syrup)
+16,Kevin,completed,7.5,2026-02-20T14:32:00+00:00,2026-02-20T14:33:00+00:00,2026-02-20T14:37:00+00:00,Small Iced Cold Brew (+2 Caramel Syrup); Chocolate Chip Cookie
+17,Aisha,completed,4.5,2026-02-20T17:19:00+00:00,2026-02-20T17:22:00+00:00,2026-02-20T17:26:00+00:00,Small Iced Latte (oat milk)
+18,Tom,completed,6.5,2026-02-20T18:19:00+00:00,2026-02-20T18:20:00+00:00,2026-02-20T18:24:00+00:00,Large Iced Coffee Frappuccino (oat milk)
+19,Mike,completed,6,2026-02-20T18:24:00+00:00,2026-02-20T18:25:00+00:00,2026-02-20T18:28:00+00:00,Large Iced Cold Brew (+2 Caramel Syrup)
+20,Jess,completed,9.25,2026-02-20T20:31:00+00:00,2026-02-20T20:34:00+00:00,2026-02-20T20:37:00+00:00,"Large Iced Matcha Latte (oat milk, +1 Caramel Syrup); Banana Bread"
+21,James,completed,8.5,2026-02-20T20:47:00+00:00,2026-02-20T20:50:00+00:00,2026-02-20T20:54:00+00:00,Small Hot Latte (oat milk); Chocolate Croissant
+22,Olivia,completed,5.75,2026-02-20T21:58:00+00:00,2026-02-20T21:59:00+00:00,2026-02-20T22:03:00+00:00,Large Hot Latte (almond milk)
+23,Lauren,completed,5.5,2026-02-19T13:31:00+00:00,2026-02-19T13:34:00+00:00,2026-02-19T13:38:00+00:00,Large Iced Latte (oat milk)
+24,Lauren,completed,6,2026-02-19T13:37:00+00:00,2026-02-19T13:40:00+00:00,2026-02-19T13:42:00+00:00,Large Iced Coffee Frappuccino (whole milk)
+25,Nina,completed,7.5,2026-02-19T14:42:00+00:00,2026-02-19T14:45:00+00:00,2026-02-19T14:50:00+00:00,"Small Iced Coffee Frappuccino (oat milk, +3 Caramel Syrup)"
+26,Mike,completed,5,2026-02-19T17:53:00+00:00,2026-02-19T17:55:00+00:00,2026-02-19T17:59:00+00:00,Large Iced Cold Brew
+27,Marcus,completed,11,2026-02-19T18:30:00+00:00,2026-02-19T18:31:00+00:00,2026-02-19T18:34:00+00:00,"Large Hot Mocha (whole milk, +1 Extra Espresso Shot); Chocolate Croissant"
+28,Emma,completed,5.5,2026-02-19T20:28:00+00:00,2026-02-19T20:31:00+00:00,2026-02-19T20:35:00+00:00,Large Hot Latte (oat milk)
+29,Olivia,completed,3.5,2026-02-19T22:00:00+00:00,2026-02-19T22:03:00+00:00,2026-02-19T22:06:00+00:00,Small Hot Jasmine Tea (+1 Caramel Syrup)
+30,Mike,completed,7,2026-02-20T00:15:00+00:00,2026-02-20T00:17:00+00:00,2026-02-20T00:20:00+00:00,Large Iced Americano; Banana Bread
+31,Aisha,completed,4.75,2026-02-18T13:34:00+00:00,2026-02-18T13:37:00+00:00,2026-02-18T13:41:00+00:00,Small Iced Latte (almond milk)
+32,Rachel,completed,5,2026-02-18T14:24:00+00:00,2026-02-18T14:25:00+00:00,2026-02-18T14:29:00+00:00,"Small Hot Latte (whole milk, +2 Hazelnut Syrup)"
+33,Mei,completed,8,2026-02-18T14:31:00+00:00,2026-02-18T14:33:00+00:00,2026-02-18T14:38:00+00:00,"Large Iced Coffee Frappuccino (oat milk, +1 Extra Espresso Shot)"
+34,Sofia,completed,11,2026-02-18T14:55:00+00:00,2026-02-18T14:58:00+00:00,2026-02-18T15:02:00+00:00,"Small Iced Jasmine Tea (+3 Caramel Syrup); Large Iced Mocha (oat milk, +1 Hazelnut Syrup)"
+35,Chris,completed,6.5,2026-02-18T17:24:00+00:00,2026-02-18T17:25:00+00:00,2026-02-18T17:30:00+00:00,"Large Iced Coffee Frappuccino (whole milk, +1 Caramel Syrup)"
+36,Kevin,completed,3.5,2026-02-18T18:55:00+00:00,2026-02-18T18:58:00+00:00,2026-02-18T19:00:00+00:00,Small Iced Americano (+1 Caramel Syrup)
+37,Jess,completed,11.25,2026-02-18T20:24:00+00:00,2026-02-18T20:26:00+00:00,2026-02-18T20:29:00+00:00,Large Iced Lemon Green Tea; Small Iced Jasmine Tea; Chocolate Croissant
+38,James,completed,4,2026-02-18T21:50:00+00:00,2026-02-18T21:52:00+00:00,2026-02-18T21:56:00+00:00,Small Iced Cold Brew
+39,Rachel,completed,12,2026-02-19T00:17:00+00:00,2026-02-19T00:18:00+00:00,2026-02-19T00:23:00+00:00,"Small Iced Latte (whole milk, +1 Hazelnut Syrup); Small Hot Latte (oat milk); Banana Bread"
+40,Mei,completed,7,2026-02-17T13:14:00+00:00,2026-02-17T13:15:00+00:00,2026-02-17T13:19:00+00:00,Large Iced Americano; Banana Bread
+41,Derek,completed,4,2026-02-17T13:16:00+00:00,2026-02-17T13:18:00+00:00,2026-02-17T13:20:00+00:00,Small Iced Cold Brew
+42,Priya,completed,5.5,2026-02-17T14:13:00+00:00,2026-02-17T14:14:00+00:00,2026-02-17T14:16:00+00:00,Large Iced Latte (oat milk)
+43,Nina,completed,5.75,2026-02-17T14:34:00+00:00,2026-02-17T14:36:00+00:00,2026-02-17T14:40:00+00:00,Large Hot Matcha Latte (oat milk)
+44,Mei,completed,13,2026-02-17T17:35:00+00:00,2026-02-17T17:37:00+00:00,2026-02-17T17:41:00+00:00,"Small Hot Latte (whole milk, +3 Caramel Syrup); Small Iced Latte (whole milk); Plain Croissant"
+45,Maria,completed,4.25,2026-02-17T18:11:00+00:00,2026-02-17T18:13:00+00:00,2026-02-17T18:17:00+00:00,Large Iced Lemon Green Tea
+46,Jess,completed,6.5,2026-02-17T18:11:00+00:00,2026-02-17T18:12:00+00:00,2026-02-17T18:17:00+00:00,"Large Hot Latte (whole milk, +3 Caramel Syrup)"
+47,Kevin,completed,10,2026-02-17T20:02:00+00:00,2026-02-17T20:04:00+00:00,2026-02-17T20:07:00+00:00,Large Hot Latte (oat milk); Small Iced Latte (oat milk)
+48,Ben,completed,5.5,2026-02-17T21:01:00+00:00,2026-02-17T21:04:00+00:00,2026-02-17T21:08:00+00:00,"Small Iced Latte (oat milk, +2 Hazelnut Syrup)"
+49,Lauren,completed,3.5,2026-02-17T21:05:00+00:00,2026-02-17T21:07:00+00:00,2026-02-17T21:12:00+00:00,Small Iced Lemon Green Tea
+50,Marcus,completed,5,2026-02-18T01:37:00+00:00,2026-02-18T01:38:00+00:00,2026-02-18T01:43:00+00:00,Large Iced Cold Brew
+53,Emma,completed,4.5,2026-02-24T15:05:00.000Z,2026-02-24T15:07:00.000Z,2026-02-24T15:10:00.000Z,"Small Hot Latte (skim milk, +1 Caramel Syrup)"
+54,David,completed,7,2026-02-24T15:09:00.000Z,2026-02-24T15:12:00.000Z,2026-02-24T15:15:00.000Z,Large Iced Americano (+2 Extra Espresso Shot)
+55,Maria,completed,4.5,2026-02-24T15:09:00.000Z,2026-02-24T15:11:00.000Z,2026-02-24T15:14:00.000Z,Small Hot Americano (+3 Caramel Syrup)
+56,Aisha,completed,13,2026-02-24T15:20:00.000Z,2026-02-24T15:23:00.000Z,2026-02-24T15:27:00.000Z,"Small Iced Coffee Frappuccino (oat milk, +2 Extra Espresso Shot); Chocolate Croissant"
+57,Lauren,completed,7.5,2026-02-24T15:27:00.000Z,2026-02-24T15:28:00.000Z,2026-02-24T15:31:00.000Z,Small Iced Cold Brew; Plain Croissant
+58,Sarah,completed,3,2026-02-24T15:33:00.000Z,2026-02-24T15:35:00.000Z,2026-02-24T15:38:00.000Z,Small Iced Americano
+59,Olivia,completed,10.5,2026-02-24T15:45:00.000Z,2026-02-24T15:48:00.000Z,2026-02-24T15:51:00.000Z,"Small Iced Coffee Frappuccino (skim milk, +2 Hazelnut Syrup); Chocolate Croissant"
+60,Alex,completed,14,2026-02-24T16:26:00.000Z,2026-02-24T16:28:00.000Z,2026-02-24T16:32:00.000Z,"Small Iced Mocha (skim milk, +1 Extra Espresso Shot); Small Hot Matcha Latte (oat milk); Banana Bread"
+61,Alex,completed,6.5,2026-02-24T16:43:00.000Z,2026-02-24T16:44:00.000Z,2026-02-24T16:49:00.000Z,Small Hot Lemon Green Tea; Small Iced Americano
+62,Sofia,completed,14,2026-02-24T16:57:00.000Z,2026-02-24T17:00:00.000Z,2026-02-24T17:03:00.000Z,"Large Iced Coffee Frappuccino (whole milk, +1 Caramel Syrup); Small Iced Coffee Frappuccino (oat milk, +1 Extra Espresso Shot)"
+63,Sofia,completed,4.5,2026-02-24T19:15:00.000Z,2026-02-24T19:16:00.000Z,2026-02-24T19:20:00.000Z,Small Iced Latte (oat milk)
+64,Mike,completed,8.5,2026-02-24T19:17:00.000Z,2026-02-24T19:20:00.000Z,2026-02-24T19:25:00.000Z,Small Iced Matcha Latte (whole milk); Chocolate Croissant
+65,Marcus,completed,8.5,2026-02-24T19:22:00.000Z,2026-02-24T19:23:00.000Z,2026-02-24T19:27:00.000Z,"Large Hot Mocha (skim milk, +2 Extra Espresso Shot)"
+66,Derek,completed,6,2026-02-24T19:35:00.000Z,2026-02-24T19:37:00.000Z,2026-02-24T19:40:00.000Z,Large Iced Coffee Frappuccino (whole milk)
+67,Tom,completed,3.75,2026-02-24T19:37:00.000Z,2026-02-24T19:39:00.000Z,2026-02-24T19:42:00.000Z,Large Iced Black Tea
+68,Emma,completed,11.5,2026-02-24T19:55:00.000Z,2026-02-24T19:57:00.000Z,2026-02-24T20:01:00.000Z,"Large Iced Coffee Frappuccino (whole milk, +3 Caramel Syrup); Chocolate Croissant"
+69,Emma,completed,5,2026-02-24T22:11:00.000Z,2026-02-24T22:12:00.000Z,2026-02-24T22:16:00.000Z,Large Iced Latte (skim milk)
+70,Nina,in_progress,11,2026-02-24T22:33:00.000Z,2026-02-24T22:36:00.000Z,,Large Iced Americano (+2 Extra Espresso Shot); Chocolate Croissant
+71,Tom,in_progress,5.25,2026-02-24T22:59:00.000Z,2026-02-24T23:00:00.000Z,,Large Hot Lemon Green Tea (+2 Hazelnut Syrup)
+72,David,in_progress,10,2026-02-24T23:10:00.000Z,2026-02-24T23:13:00.000Z,,"Large Iced Coffee Frappuccino (skim milk, +2 Hazelnut Syrup); Banana Bread"
+73,Tyler,in_progress,9,2026-02-24T23:37:00.000Z,2026-02-24T23:39:00.000Z,,Large Hot Latte (oat milk); Plain Croissant
+74,Aisha,new,9,2026-02-24T23:50:00.000Z,,,"Large Iced Mocha (oat milk, +2 Extra Espresso Shot)"
+75,Marcus,new,3,2026-02-25T02:14:00.000Z,,,Small Hot Jasmine Tea
+76,Tom,new,4,2026-02-25T02:57:00.000Z,,,Small Hot Black Tea (+2 Caramel Syrup)
+77,Rachel,new,6,2026-02-25T03:24:00.000Z,,,Large Iced Mocha (oat milk)
+78,Jordan,new,6,2026-02-25T15:20:00.000Z,,,Large Iced Coffee Frappuccino (skim milk)
+79,Kevin,new,4.25,2026-02-25T15:24:00.000Z,,,Large Iced Lemon Green Tea
+80,Sam,new,4.5,2026-02-25T15:26:00.000Z,,,Small Hot Latte (oat milk)
+81,Sarah,new,8,2026-02-25T15:35:00.000Z,,,Small Hot Latte (oat milk); Plain Croissant
+82,Derek,new,5.5,2026-02-25T16:00:00.000Z,,,Large Iced Mocha (skim milk)
+83,Tyler,new,3.75,2026-02-25T16:06:00.000Z,,,Large Hot Black Tea
+84,Tom,new,13.25,2026-02-25T16:16:00.000Z,,,"Large Iced Cold Brew (+2 Extra Espresso Shot); Small Hot Latte (almond milk, +1 Caramel Syrup)"
+85,Chris,new,4,2026-02-25T16:16:00.000Z,,,Small Iced Latte (whole milk)
+86,Nina,new,3,2026-02-25T16:56:00.000Z,,,Small Iced Americano
+87,Tyler,new,7.5,2026-02-25T16:58:00.000Z,,,Large Iced Cold Brew; Chocolate Chip Cookie
+88,Sam,new,9,2026-02-25T19:04:00.000Z,,,"Large Hot Mocha (oat milk, +2 Extra Espresso Shot)"
+89,Derek,new,7.5,2026-02-25T19:12:00.000Z,,,"Large Iced Coffee Frappuccino (whole milk, +1 Extra Espresso Shot)"
+90,Tom,new,4,2026-02-25T19:17:00.000Z,,,Large Iced Americano
+91,Sarah,new,5.75,2026-02-25T19:18:00.000Z,,,Large Hot Latte (almond milk)
+92,Ben,new,5.5,2026-02-25T19:40:00.000Z,,,Small Iced Americano; Chocolate Chip Cookie
+93,Sarah,new,9,2026-02-25T19:44:00.000Z,,,"Large Hot Mocha (oat milk, +2 Extra Espresso Shot)"
+94,Derek,new,10,2026-02-25T22:29:00.000Z,,,"Large Iced Latte (whole milk, +2 Hazelnut Syrup); Chocolate Croissant"
+95,Mei,new,17.25,2026-02-25T22:59:00.000Z,,,"Small Iced Coffee Frappuccino (almond milk); Small Iced Latte (whole milk, +2 Extra Espresso Shot); Chocolate Croissant"
+96,Olivia,new,4,2026-02-25T23:18:00.000Z,,,Small Iced Americano (+2 Hazelnut Syrup)
+97,Jess,new,4.75,2026-02-25T23:58:00.000Z,,,Small Hot Latte (almond milk)
+98,Rachel,new,9.25,2026-02-26T00:30:00.000Z,,,Large Hot Lemon Green Tea (+2 Caramel Syrup); Chocolate Croissant
+99,Tom,new,10.25,2026-02-26T00:57:00.000Z,,,Small Iced Latte (whole milk); Large Hot Mocha (almond milk)
+100,Marcus,new,8.75,2026-02-26T03:44:00.000Z,,,Large Hot Latte (whole milk); Large Hot Black Tea
+101,Sofia,new,8,2026-02-26T03:46:00.000Z,,,Large Hot Americano; Chocolate Croissant
+102,Emma,new,7.5,2026-02-26T03:58:00.000Z,,,"Large Iced Matcha Latte (almond milk, +3 Caramel Syrup)"
